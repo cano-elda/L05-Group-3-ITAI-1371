@@ -16,3 +16,6 @@ The median was used to fill in missing Age values so those rows would not be del
 
 to place features with different ranges on a similar scale. An important thing that I learned was that negative values do not always mean something is wrong.
 
+
+Michelle‘s Entry:
+In this lab I learned that preprocessing and cleaning the data is a must before doing anything else with it. Raw data usually has missing values and text that a model can't understand, so if we skip this essential step then the model can give wrong results or worst case scenario it won’t run at all. What stood out to me was how much of machine learning is just preparing the data. The part I found hardest to understand was why we drop one of the columns after one-hot encoding. It took me a bit to see that if Sex_male is 0 we already know the person is female so the extra column isn't needed, which leads me to the question when is the correct moment to keep or drop a column?
