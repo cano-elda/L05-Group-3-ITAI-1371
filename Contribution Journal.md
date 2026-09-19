@@ -12,3 +12,7 @@ For Module 5 Lab, I completed part 4 (Feature Scaling Concept) where age and far
 
 I also answered question #3 of the Knowledge Check section.
 
+
+Michelle‘s Entry:
+
+For this lab I completed Task 2, the coding part on one-hot encoding this is where I used pd.get_dummies() to encode the 'Sex' and 'Embarked' columns. I also answered Knowledge Check question 2, explaining what one-hot encoding is and why it's necessary.
