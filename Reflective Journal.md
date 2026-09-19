@@ -1,11 +1,10 @@
 Xinyu's Entry:
 
-This lab showed me the importance of data preparation for a machine learning model. In this lab, we dealt with missing values in a dataset. I filled the missing values in the Age column with the median of that column. It showed me that missing values can’t be ignored, as they will affect the rest of the lab as well as analyses done in later labs.
+Working with this lab helped me understand that data preparation is an important step when preparing a dataset for a machine learning model. Because a model is trained with the data provided, any missing or inappropriately prepared data will negatively affect the model and any resulting predictions made by the model. I worked with missing data in the “Age” column for this part of the lab and used median imputation for the missing data. After imputing the missing data, I checked the “Age” column to verify that there were no missing values left in the column.
 
-I also learned that the median can be better than the mean to replace missing values in a column. The median is less affected by high values and low values in the data. Thus, it is a better representation of the data if it contains many outliers or is not symmetric. This means that the choice of a missing value replacement also depends on the type of the data in the column.
+I also learned that instead of using the mean for imputing the missing values in numerical data, it is better to use the median. This is because the mean is strongly affected by very high or very low values in a skewed distribution, whereas the median is not. Therefore, for a skewed distribution with very high or very low values, it is better to use the median instead of the mean. This also means that instead of using the same method for all missing values in a data set, we should look at the distribution of the feature and decide whether it is appropriate to use that method for that feature.
 
-A second key takeaway from this assignment is the notion of what it means to run cells in a notebook in order. At first, I received an error because I seems that the DataFrame that I had created for the assignment had not been loaded when I ran my own code for the assignment. But running the cells before (in order) worked just fine.
-
+Preprocessing can also affect how a machine learning model works. In this case, by imputing missing Age values, we ensured that all samples with any amount of information can be used for training a model, rather than having to exclude whole rows of data. However, the imputation method used here has the severe limitation that every missing Age value is replaced by the same value. This leads to a loss of information in cases where there is real variation in the ages of passengers who are missing. Future versions of this model could benefit from a comparison with other imputation methods and possibly from incorporating further information about the passengers.
 
 
 Elda's Entry:
